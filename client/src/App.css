@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid lightblue;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-container {
+  margin: auto;
+  width: 80%;
+}
+
+.image:hover {}
+
+.div1 {
+  background-image: url('./images/debut.jpg');
+}
+
+.div2 {
+  background-image: url('./images/fearless.jpg');
+}
+
+.div3 {
+  background-image: url('./images/speaknow.jpg');
+}
+
+.div4 {
+  background-image: url('./images/red.jpg');
+}
+
+.div5 {
+  background-image: url('./images/1989.jpg');
+}
+
+.div6 {
+  background-image: url('./images/reputation.jpg');
+}
+
+.div7 {
+  background-image: url('./images/lover.jpg');
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: inline-block;
+}

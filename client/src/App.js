@@ -1,29 +1,22 @@
 import React, { Component } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import './App.css'
+import Navbar from './components/Navbar'
+import Container from './components/Container'
+
 
 class App extends Component {
-  // state: {
-  //   score: ,
-
-  // }
+  state = {
+    currentscore: 0,
+    highscore: 0,
+  }
   render() {
     return (
       <>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6">
-              Welcome to Taylor Swift's Clicky Game!
-            </Typography>
-            <Typography variant="h6">
-              Click an album cover to begin
-            </Typography>
-            <Typography variant="h6">
-              Current Score: 0 | Top Score: 0
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <Navbar 
+        currentscore={this.state.currentscore}
+        highscore={this.state.highscore}>
+        </Navbar>
+        <Container></Container>
       </>
     );
   }

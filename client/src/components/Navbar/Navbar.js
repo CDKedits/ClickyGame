@@ -17,7 +17,7 @@ const Navbar = props => {
             </Grid>
             <Grid item xs="4" style={{ textAlign: "center" }}>
               <Typography variant="h6">
-                {props.haslost ? 'You lost!' : 'Click an album cover!'}
+                Click on an album cover to start!
               </Typography>
             </Grid>
             <Grid item xs="4" style={{ textAlign: "center" }}>

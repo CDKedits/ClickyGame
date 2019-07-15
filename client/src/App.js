@@ -19,54 +19,111 @@ class App extends Component {
     div8: null
   }
 
-  // handleLoss = _ => {
-  //   if (this.state.currentscore > this.state.highscore) {
-  //     this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0 })
-  //   } else {
-  //     this.setState({ haslost: true, currentscore: 0 })
-  //   }
-  // }
-
   handleClick = event => {
     switch (event.target.className) {
       case 'div1 image':
         if (this.state.div1 === true) {
           if (this.state.currentscore > this.state.highscore) {
-            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0 })
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
           } else {
-            this.setState({ haslost: true, currentscore: 0 })
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
           }
         } else {
           this.setState({ currentscore: this.state.currentscore + 1, div1: true })
         }
         break
       case 'div2 image':
-        this.setState({ div2: true })
-        console.log(this.state.div2)
+        if (this.state.div2 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div2: true })
+        }
         break
       case 'div3 image':
-        this.setState({ div3: true })
-        console.log(this.state.div3)
+        if (this.state.div3 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div3: true })
+        }
         break
       case 'div4 image':
-        this.setState({ div4: true })
-        console.log(this.state.div4)
+        if (this.state.div4 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div4: true })
+        }
         break
       case 'div5 image':
-        this.setState({ div5: true })
-        console.log(this.state.div5)
+        if (this.state.div5 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div5: true })
+        }
         break
       case 'div6 image':
-        this.setState({ div6: true })
-        console.log(this.state.div6)
+        if (this.state.div6 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div6: true })
+        }
         break
       case 'div7 image':
-        this.setState({ div7: true })
-        console.log(this.state.div7)
+        if (this.state.div7 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div7: true })
+        }
         break
       case 'div8 image':
-        this.setState({ div8: true })
-        console.log(this.state.div8)
+        if (this.state.div8 === true) {
+          if (this.state.currentscore > this.state.highscore) {
+            alert('You lost!')
+            this.setState({ haslost: true, highscore: this.state.currentscore, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          } else {
+            alert('You lost!')
+            this.setState({ haslost: true, currentscore: 0, div1: null, div2: null, div3: null, div4: null, div5: null, div6: null, div7: null, div8: null })
+          }
+        } else {
+          this.setState({ currentscore: this.state.currentscore + 1, div8: true })
+        }
         break
       default: console.log('uh oh')
         break

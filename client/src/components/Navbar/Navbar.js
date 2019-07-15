@@ -17,12 +17,12 @@ const Navbar = props => {
             </Grid>
             <Grid item xs="4" style={{ textAlign: "center" }}>
               <Typography variant="h6">
-                Click an album cover to begin!
-                  </Typography>
+                {props.haslost ? 'You lost!' : 'Click an album cover!'}
+              </Typography>
             </Grid>
             <Grid item xs="4" style={{ textAlign: "center" }}>
               <Typography variant="h6">
-                Current Score: {props.currentScore ? `${props.currentScore}` : `${0}`} | High Score: {props.highScore ? `${props.highScore}` : `${0}`}
+                Current Score: {props.currentscore ? `${props.currentscore}` : `${0}`} | High Score: {props.highscore ? `${props.highscore}` : `${0}`}
               </Typography>
             </Grid>
           </Grid>
